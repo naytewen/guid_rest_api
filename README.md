@@ -87,3 +87,17 @@ The following response codes should be returned by the service:
 
 
 Built using python, MongoDB, redis, and tornado webframe.
+
+How to run:
+make sure tornado, redis, and mongoDB are installed.
+pipenv install (module)
+
+run this command to start server (http://localhost:8080/):
+pipenv run python guid.py
+
+can use postman to send requests to server 
+
+Assumptions:
+could not call post request with guid that already exists in database
+could not call put request with guid inside body of input
+used put handler for updates rather than post
