@@ -92,6 +92,9 @@ How to run:
 make sure tornado, redis, and mongoDB are installed.
 pipenv install (module)
 
+start redis:
+run redis-server in terminal
+
 run this command to start server (http://localhost:8080/):
 pipenv run python guid.py
 
