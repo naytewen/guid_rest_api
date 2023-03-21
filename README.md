@@ -101,6 +101,6 @@ pipenv run python guid.py
 can use postman to send requests to server 
 
 Assumptions:
-could not call post request with guid that already exists in database
-could not call put request with guid inside body of input
-used put handler for updates rather than post
+could not call post request with guid that already exists in database <br />
+could not call put request with guid inside body of input <br />
+used put handler for updates rather than post <br />
