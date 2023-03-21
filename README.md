@@ -10,6 +10,7 @@ formatted in Unix Time. Input and output data should be valid JSON format. Valid
 conforms the specified formats. Code must be documented.
 
 Commands specification
+
 Create
 Creates a new GUID and stores it in the database along with the metadata
 provided. If a GUID is not specified, the system should generate a random one.
