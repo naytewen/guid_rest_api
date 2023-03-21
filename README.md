@@ -14,6 +14,7 @@ Commands specification
 Create
 Creates a new GUID and stores it in the database along with the metadata
 provided. If a GUID is not specified, the system should generate a random one.
+
 Example 1
 URL: POST /guid/9094E4C980C74043A4B586B420E69DDF
 Input:
@@ -27,6 +28,7 @@ Output:
 "expire": "1427736345",
 "user": "Cylance, Inc."
 }
+
 Example 2
 URL: POST /guid
 Input:
@@ -42,6 +44,7 @@ Output:
 
 Read
 Returns the metadata associated to the given GUID.
+
 Example
 URL: GET /guid/9094E4C980C74043A4B586B420E69DDF
 
@@ -55,6 +58,7 @@ Output:
 Update
 Updates the metadata associated to the given GUID. The GUID itself cannot be
 updated using this command.
+
 Example
 URL: POST /guid/9094E4C980C74043A4B586B420E69DDF
 Input:
@@ -70,6 +74,7 @@ Output:
 
 Delete
 Deletes the GUID and its associated data.
+
 Example
 URL: DELETE /guid/9094E4C980C74043A4B586B420E69DDF
 No output.
@@ -79,3 +84,6 @@ The following response codes should be returned by the service:
 200's on accepted/successful requests
 400's on client errors
 500's on server errors
+
+
+Built using python, MongoDB, redis, and tornado webframe.
